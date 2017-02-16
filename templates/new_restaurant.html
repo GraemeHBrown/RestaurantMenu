@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>~New Restaurant~</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+     <link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+</head>
+<body>
+<div class="header">
+    <h1> Add a new Restaurant</h1>
+    <div class="navigation">   <a href="{{url_for('showRestaurants')}}">Back to main menu</a> </div>
+</div>
+
+<div class="create-edit-delete-pane">
+    {% from "formhelpers.html" import render_field %}
+    <form method=post>
+        <dl>
+        {{ render_field(form.name, class='form-fields', placeholder='New Restaurant Name')}}
+        </dl>
+        <input type=submit value=Create class="button">
+        <a class="button" href="{{url_for('showRestaurants')}}">Cancel</a>
+
+    </form>
+
+</div>
+</body>
+</html>

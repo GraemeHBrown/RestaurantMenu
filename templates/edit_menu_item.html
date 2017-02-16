@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>~Edit Menu Item~</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+    <link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+</head>
+<body>
+<div class="header">
+    <h1>Edit Menu Item: {{item.name}}</h1>
+    <div class="navigation">   <a href="{{url_for('showMenu', restaurant_id=restaurant_id)}}">Back to menu</a> </div>
+</div>
+
+<div class="create-edit-delete-pane">
+    {% from "formhelpers.html" import render_field_item %}
+    <form method=post>
+        <dl>
+        {{ render_field_item(form.course, class='form-fields', placeholder=item.course) }}
+        {{ render_field_item(form.name, class='form-fields', placeholder=item.name) }}
+        {{ render_field_item(form.price, class='form-fields', placeholder=item.price) }}
+        {{ render_field_item(form.description, class='form-fields', placeholder=item.description) }}
+        </dl>
+        <input type=submit value=Update class="button">
+        <a class="button" href="{{url_for('showMenu', restaurant_id=restaurant_id)}}">Cancel</a>
+    </form>
+
+</div>
+</body>
+</html>
+
+
+

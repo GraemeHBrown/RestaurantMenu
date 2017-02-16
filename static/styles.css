@@ -1,0 +1,191 @@
+/*Styling for elements*/
+
+body {
+    font-family: sans-serif;
+    background-image: url("restaurant.jpg")
+}
+
+h1 {
+    color: #FFFFFF;
+    font-family: "Pacifico", cursive;
+    font-size:45px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    text-align: left;
+    border-bottom: 3px dotted grey;
+}
+
+.navigation {
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px
+}
+
+.navigation a {
+    margin-right: 20px;
+    color: #FFFFCC;
+}
+
+.pane {
+    position:absolute;
+    left: 25%;
+    border: 3px solid;
+    border-radius: 25px;
+    padding: 40px;
+    margin: 5px;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+}
+
+.pane h2 {
+    color: black;
+    font-size: 28px;
+}
+
+.restaurant-name a {
+    color: black;
+}
+
+.menu-pane {
+    position:absolute;
+    left: 15%;
+    padding: 40px;
+    border-radius: 25px;
+    margin: 5px;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+}
+
+.menu-pane h2 {
+    color: black;
+    font-size: 28px;
+}
+
+.menu-pane a {
+    text-decoration: none;
+    color:#ea3838;
+}
+
+.item-edit-links:hover {
+    text-decoration: underline;
+}
+
+.edit-rest-links a {
+    color: #ea3838;
+}
+
+.edit-rest-links {
+    color: #d0c3c3;
+    border-bottom: 1px dotted;
+    width: 100%;
+}
+
+.create-edit-delete-pane {
+    position:absolute;
+    min-width: 500px;
+    left: 25%;
+    border: 3px solid;
+    padding: 20px;
+    margin: 25px;
+    margin-top: 75px;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.create-edit-delete-pane dd {
+    margin: 0px;
+}
+
+.label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.form-fields {
+    width:75%;
+    font-size: 15px;
+}
+
+.create-edit-delete-pane a {
+    text-decoration: none;
+}
+
+.button {
+    background: #888484;
+    border:none;
+    padding:5px;
+    font: inherit;
+    color:#FFFFFF;
+}
+
+.button:hover {
+     border: 1px solid red;
+}
+
+.course-title {
+    color: #d0c3c3;
+    border-bottom: 2px dotted;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    text-align: left;
+    float: left;
+    width: 50%;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.item-price {
+    text-align: right;
+    width:50%;
+    float: right;
+}
+
+.item-description {
+    text-align: left;
+    float: left;
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+.item-edit-links {
+    float: left;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.items-container {
+    width: 100%;
+    float: left;
+}
+
+.no-items-listed {
+    font-style: italic;
+}
+
+/*Flash messages and error messages*/
+.flash {
+    background: #faf0e6;
+    color: #8B0000
+}
+
+.error {
+    background: #FAF0E6;
+    padding: 0.5em;
+    color: #8B0000
+}
