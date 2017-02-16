@@ -4,12 +4,12 @@ This isn't production code as it lacks error handling and is only connected to t
 
 Dependencies for the project:
 
-Flask	0.12
-Jinja2	2.9.4
-MarkupSafe	0.23
-SQLAlchemy	1.1.4
-WTForms	2.1
-Werkzeug	0.11.15
+Flask	0.12;
+Jinja2	2.9.4;
+MarkupSafe	0.23;
+SQLAlchemy	1.1.4;
+WTForms	2.1;
+Werkzeug	0.11.15;
 itsdangerous	0.24
 
 In order to install create a virtualenv and install the dependencies using pip. Start the server on port 5000 for finalProject.py then navigate to localhost:5000 to see the app.
