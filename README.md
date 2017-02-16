@@ -1,6 +1,6 @@
 # RestaurantMenu
 This is the code for the final project from Udacity Full Stack Foundations Course.  The task was to create menu app using Python, Flask, SQLite, SQLAlchemy and incorporting any types of styling required.  Rather than using standard forms this uses the WTForms extension for Flask.
-This isn't production code as it lacks error handling and is only connected to the SQLite db.  The suggested course environment was Vagrant however I developed this using Virtualenv and PyCharm.  The code is generic and will work on Vagrant or other envs with the following dependencies.
+This isn't production code as it lacks error handling and is only connected to the SQLite db.  The suggested course environment was Vagrant however I developed this using virtualenv and PyCharm.  The code needs the following dependencies.
 
 Dependencies for the project:
 
