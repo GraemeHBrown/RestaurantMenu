@@ -12,5 +12,5 @@ WTForms	2.1;
 Werkzeug	0.11.15;
 itsdangerous	0.24
 
-In order to install create a virtualenv.  Activate the env, for example on windows: > \path\to\env\Scripts\activate.  Then install the dependencies using pip. Start the server on port 5000 for finalProject.py then navigate to localhost:5000 to see the app.
+In order to install create a virtualenv.  Activate the env, for example on windows: > \path\to\env\Scripts\activate.  Then install the dependencies (dependencies.txt) using pip "pip install -r dependencies.txt". Start the server on port 5000 for finalProject.py then navigate to localhost:5000 to see the app.
 
